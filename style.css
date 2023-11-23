@@ -1,0 +1,26 @@
+#news {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+}
+
+.article {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(255, 0, 0, 0.656);
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 10%;
+    width: 50%;
+    height: 550px;
+    text-align: center;
+}
+
+.article img {
+    width: 250px;
+    height: 250px;
+}
+
+.article:hover {
+    box-shadow: 0px 0px 10px 10px rgba(4, 255, 0, 0.656)
+}

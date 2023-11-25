@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const blog = document.getElementById("news");
 
-  function getDate() {
+  function getData() {
     axios
       .get(
         "https://gnews.io/api/v4/top-headlines?category=nation&lang=en&country=in&max=10&apikey=ea5a307a752a6d244d9bec25e8fd9a88"
@@ -32,8 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
-  getDate();
+  getData();
 });
-
-
-

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function getDate() {
     axios
       .get(
-        "https://gnews.io/api/v4/top-headlines?token=ea5a307a752a6d244d9bec25e8fd9a88&lang=en&country=in"
+        "https://gnews.io/api/v4/top-headlines?category=nation&lang=en&country=in&max=10&apikey=ea5a307a752a6d244d9bec25e8fd9a88"
       )
       .then((res) => {
         const articleList = res.data.articles;
@@ -34,3 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   getDate();
 });
+
+
+
